@@ -1,2 +1,2 @@
-# ormir-xct-github.io
+# ormir-xct.github.io
 Website of ORMIR-XCT
