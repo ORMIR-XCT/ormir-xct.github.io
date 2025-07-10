@@ -1,18 +1,22 @@
-title: ORMIR-MIDS
-description: Standardizing the organization of musculoskeletal imaging data
-author: The ORMIR-MIDS working group of the ORMIR community
+# Book characteristics
+title: ORMIR-XCT
+description: Standardizing the processing of XCT images
+author: The ORMIR-XCT working group of the ORMIR community
+logo: logo.png
 
+# Using GitHub action
 uses: actions/download-artifact@v4
 
+# Building
 build:
   output_dir: .
 
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/ormir-xct/ormir-xct.github.io  
+  branch: master  
 
 # Add GitHub buttons to the book
-repository:
-  url: https://github.com/ormir-mids/ormir-mids.github.io  
-  branch: master  
 html:
   use_issues_button: true
   use_repository_button: true
-
