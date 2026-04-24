@@ -1,0 +1,23 @@
+version: 1
+project:
+  title: ORMIR-XCT
+  github: ormir-xct/ormir-xct.github.io
+  toc:
+    - file: index.md
+    - file: installation.md
+    - file: tutorials.md
+      children:
+      - file: tutorials/Automatic_Contour.ipynb
+      - file: tutorials/Laplace_Hamming_Filter.ipynb
+      - file: tutorials/Trabecular_Segmentation.ipynb
+      - file: tutorials/Bone_Mineral_Density.ipynb
+      - file: tutorials/Thickness_Of_Shapes.ipynb
+    - file: api.md
+    - file: contributing.md
+    - file: citation_and_references.md
+site:
+  options:
+    favicon: favicon.png
+    logo: logo.png
+    folders: true
+  template: book-theme

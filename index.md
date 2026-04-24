@@ -1,8 +1,21 @@
 # ORMIR-XCT
 
-**~~~ Website under construction ~~~**
+**🚧 Website under construction 🚧**
 
-## Citation
 
-[Michael T. Kuczynski](https://www.linkedin.com/in/mkuczyns/), [Nathan J. Neeteson](https://www.linkedin.com/in/nathan-neeteson/), [Kathryn S. Stok](https://www.linkedin.com/in/kstok/), [Andrew J. Burghardt](https://www.linkedin.com/in/aburghardt/), [Michelle A. Espinosa Hernandez](https://www.linkedin.com/in/michelleaespinosah/), [Jared Vicory](https://www.kitware.com/jared-vicory/), [Justin J. Tse](https://www.linkedin.com/in/justin-j-tse/), [Pholpat Durongbhan](https://www.linkedin.com/in/pholpatd/), [Serena Bonaretti](https://sbonaretti.github.io/), [Andy Kin On Wong](https://www.linkedin.com/in/andy-kin-on-wong-76408859/), [Steven K. Boyd](https://mccaig.ucalgary.ca/boyd), [Sarah L. Manske](https://www.linkedin.com/in/sarah-manske-b5402b41/). *ORMIR_XCT: A Python package for high resolution peripheral quantitative computed tomography image processing*. Journal of Open Source Software, 9(97), 6084, https://doi.org/10.21105/joss.06084, 2024.
 
+
+## What is ORMIR-XCT?
+
+ORMIR-XCT is a Python package to analyze high resolution computed tomography (CT) images of bones. 
+
+Currently, we are working on the workflows to analyze images from High Resolution peripheral Quantitative CT (HR-pQCT).   
+In the future, we will add workflows for Micro CT (µCT) and Photon Counting Detector CT (PCDCT)
+
+
+## Why is ORMIR-XCT important?
+
+So far, processing high resolution images has largely been supported using the scanner manufacturer’s scripting language. 
+However, this does not allow researchers to have the flexibility to apply more advanced mathematical techniques and leverage modern software packages to improve image processing.
+
+ORMIR-XCT is developed to reimplement and extend computational workflows so that we can advanced high resolution CT-based research in an open and reproducible way.

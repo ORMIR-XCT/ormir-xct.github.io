@@ -1,8 +1,13 @@
 # Installation
 
-**~~~ Page under construction ~~~**
+**🚧 Page under construction 🚧**
 
-#### Option A: Install into a new Anaconda environment:
+
+::::{tab-set}
+
+<!-- Tab 1: new environment -->
+:::{tab-item} Install into a new Anaconda environment
+:sync: tab1
 
 ***For Windows, Linux, and Intel-based Mac:***
 
@@ -29,11 +34,23 @@
 `conda activate ormir_xct`
 
 5: Install the required dependencies using pip:  
-`pip install -r requirements.txt`  
+`pip install -r requirements.txt` 
 
-#### Option B: Install into an existing Anaconda environment: 
+:::
+
+
+<!-- Tab 2: existing environment -->
+:::{tab-item} Install into an existing Anaconda environment
+:sync: tab2
+
 1: Activate your environment:  
 `conda activate my_env`
 
 2: Install ormir-xct from PyPi  
 `pip install ormir-xct`
+
+:::
+
+::::
+
+
