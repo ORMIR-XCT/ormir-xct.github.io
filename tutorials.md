@@ -4,7 +4,6 @@
 
 Here are our current tutorials:
 
-
 ### Bone segmentation
 
 - [Automatic contour](tutorials/Automatic_Contour.ipynb)
