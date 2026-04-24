@@ -17,7 +17,7 @@ project:
     - file: citation_and_references.md
 site:
   options:
-    favicon: favicon.png
-    logo: logo.png
+    favicon: figures/favicon.png
+    logo: figures/logo.png
     folders: true
   template: book-theme
