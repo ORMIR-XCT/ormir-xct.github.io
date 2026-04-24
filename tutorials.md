@@ -17,4 +17,4 @@ Here are our current tutorials:
 
 
 ### Code validation
-- [Thickness of shapes](tutorials/Thickness_Of_Shapes.ipynb)
+- [Thickness of shapes](tutorials/Thickness_Of_Shapes.ipynb) 
