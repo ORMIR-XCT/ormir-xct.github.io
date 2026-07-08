@@ -12,6 +12,11 @@ project:
       - file: tutorials/Trabecular_Segmentation.ipynb
       - file: tutorials/Bone_Mineral_Density.ipynb
       - file: tutorials/Thickness_Of_Shapes.ipynb
+    - file: workflows.md
+      children:
+      - file: workflows/segmentation/segmentation_workflows.md
+      - file: workflows/morphology/morphology_workflows.md
+      - file: workflows/bmd/bmd_workflows.md
     - file: api.md
     - file: contributing.md
     - file: citation_and_references.md
