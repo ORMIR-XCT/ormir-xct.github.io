@@ -5,13 +5,15 @@ project:
   toc:
     - file: index.md
     - file: installation.md
-    - file: tutorials.md
+    - file: workflows.md
       children:
-      - file: tutorials/Automatic_Contour.ipynb
-      - file: tutorials/Laplace_Hamming_Filter.ipynb
-      - file: tutorials/Trabecular_Segmentation.ipynb
-      - file: tutorials/Bone_Mineral_Density.ipynb
-      - file: tutorials/Thickness_Of_Shapes.ipynb
+      - file: workflows/examples/examples.md
+      - file: workflows/modules/modules.md
+        children:
+        - file: workflows/modules/preprocessing/preprocessing_modules.md
+        - file: workflows/modules/segmentation/segmentation_modules.md
+        - file: workflows/modules/bmd/bmd_modules.md
+        - file: workflows/modules/morphology/morphology_modules.md
     - file: api.md
     - file: contributing.md
     - file: citation_and_references.md
