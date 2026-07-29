@@ -16,6 +16,13 @@ project:
         - file: segmentation/auto_contour_img.md
         - file: segmentation/auto_contour_gobj.md
       - file: segmentation/local_adaptive.md
+    - file: bmd.md
+    - file: jsw_morphometry.md
+      children:
+      - file: jsw_pad.md
+      - file: jsw_dilate.md
+      - file: jsw_erode.md
+      - file: jsw_parameters.md
     - file: tutorials.md
       children:
       - file: tutorials/Automatic_Contour.ipynb
