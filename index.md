@@ -4,7 +4,6 @@
 
 
 
-
 ## What is ORMIR-XCT?
 
 ORMIR-XCT is a Python package to analyze high resolution computed tomography (CT) images of bones. 

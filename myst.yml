@@ -5,6 +5,17 @@ project:
   toc:
     - file: index.md
     - file: installation.md
+    - file: preprocessing/preprocessing.md
+      children:
+          - file: preprocessing/gauss_filter.md
+          - file: preprocessing/lh_filter.md
+    - file: segmentation/segmentation.md
+      children:
+      - file: segmentation/auto_contour.md
+        children:
+        - file: segmentation/auto_contour_img.md
+        - file: segmentation/auto_contour_gobj.md
+      - file: segmentation/local_adaptive.md
     - file: tutorials.md
       children:
       - file: tutorials/Automatic_Contour.ipynb
