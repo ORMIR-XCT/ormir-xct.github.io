@@ -5,24 +5,26 @@ project:
   toc:
     - file: index.md
     - file: installation.md
-    - file: preprocessing/preprocessing.md
+    - file: functions.md
       children:
-          - file: preprocessing/gauss_filter.md
-          - file: preprocessing/lh_filter.md
-    - file: segmentation/segmentation.md
-      children:
-      - file: segmentation/auto_contour.md
+      - file: functions/bmd/bmd.md
+      - file: functions/joint_space/jsw_morphometry.md
         children:
-        - file: segmentation/auto_contour_img.md
-        - file: segmentation/auto_contour_gobj.md
-      - file: segmentation/local_adaptive.md
-    - file: bmd.md
-    - file: jsw_morphometry.md
-      children:
-      - file: jsw_pad.md
-      - file: jsw_dilate.md
-      - file: jsw_erode.md
-      - file: jsw_parameters.md
+        - file: functions/joint_space/jsw_pad.md
+        - file: functions/joint_space/jsw_dilate.md
+        - file: functions/joint_space/jsw_erode.md
+        - file: functions/joint_space/jsw_parameters.md
+      - file: functions/preprocessing/preprocessing.md
+        children:
+        - file: functions/preprocessing/gauss_filter.md
+        - file: functions/preprocessing/lh_filter.md
+      - file: functions/segmentation/segmentation.md
+        children:
+        - file: functions/segmentation/auto_contour.md
+          children:
+          - file: functions/segmentation/auto_contour_img.md
+          - file: functions/segmentation/auto_contour_gobj.md
+        - file: functions/segmentation/local_adaptive.md
     - file: tutorials.md
       children:
       - file: tutorials/Automatic_Contour.ipynb
