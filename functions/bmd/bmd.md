@@ -1,7 +1,7 @@
 # Bone Mineral Density
 
 This function calculates the Bone Mineral Density (BMD) of an image in mgHA/ccm. 
-If no mask is provided, the BMD will be calculated for the entire image from its intensity. 
+If no mask is provided, BMD will be calculated for the entire image from its intensity. 
 If a mask is provided, BMD will be calculated only for voxels inside the masked region.
 
 ## Function 
