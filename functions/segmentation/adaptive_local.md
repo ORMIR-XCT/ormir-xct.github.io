@@ -1,6 +1,7 @@
 # Adaptive local thresholding
 
-Local adaptive thresholding computes a threshold for each voxel using the intensity range of neighboring voxels — in contrast, fixed global thresholding uses a single threshold value for the entire image.
+Local adaptive thresholding computes a threshold for each voxel using the intensity range of neighboring voxels. 
+This contrast with fixed global thresholding — adopted in the Gaussian and LaplaceHamming filter — which  uses a single threshold value for the entire image.
 
 ## Function
 To use local adaptive thresholding with the default input settings, use the following commands:
@@ -8,7 +9,8 @@ To use local adaptive thresholding with the default input settings, use the foll
 ```python
 from ormir_xct.core.segmentation.adaptive_local_threshold import adaptive_local_thresholding
 
-adaptive-local-threshold(structuring_element_shape,
+adaptive-local-threshold(
+    structuring_element_shape,
     structuring_element_size,
     lower_threshold,
     upper_threshold,
@@ -22,13 +24,13 @@ adaptive-local-threshold(structuring_element_shape,
 ```{tab-item} HR-pQCT
 
 `image_sitk` : Image to threshold, accepts string paths  
-`structuring_element_shape`: Shape of the structuring element, accepts `ball` or `cube`  
-`structuring_element_size`: Size of structuring element  
-`lower_threshold`: The lower threshold  
-`upper_threshold`: The upper threshold  
-`local_threshold_method`: The method to use for identifying local thresholds. Accepts `mean`, `minmax`, or `both`   
-`sigma`: The sigma to use for the gaussian filter  
-`minimum_structure_size`: The minimum size of structures to keep in the segmentation  
+`structuring_element_shape`: Shape of the structuring element, accepts `ball` or `cube`. Default = `ball`   
+`structuring_element_size`: Size of structuring element. Default = `6`
+`lower_threshold`: The lower threshold. Default = `190`  
+`upper_threshold`: The upper threshold. Default = `450`  
+`local_threshold_method`: The method to use for identifying local thresholds. Accepts `mean`, `minmax`, or `both`. Default = `mean`   
+`sigma`: The sigma to use for the gaussian filter. Default = `None`  
+`minimum_structure_size`: The minimum size of structures to keep in the segmentation. Default = `64`  
 ```
 Further information about the function and its inputs can be found here (link to the API coming soon!)
 

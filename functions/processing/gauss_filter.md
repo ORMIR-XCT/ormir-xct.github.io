@@ -8,7 +8,8 @@ To use the Gaussian filter combined with a fixed threshold, use the following co
 ```python
 from ormir_xct.core.segmentation.gauss_seg import gauss_seg
 
-seg_gauss(input_image,
+gauss_seg(
+    input_image,
     lower_threshold,
     upper_threshold,
     value_in_range,

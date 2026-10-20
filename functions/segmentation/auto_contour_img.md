@@ -1,6 +1,6 @@
 # Automatic contouring
 
-The automatic contouring algorithm generates the periosteal mask of the bone in the gray value image.
+The automatic contouring algorithm generates the periosteal mask of the bone based on the gray value image.
 
 ## Function
 To use automatic contouring, use the following commands:
@@ -14,7 +14,7 @@ autocontour(img,
     rescale_intercept)
 ```
 
-## Input parameter settings
+## Input settings
 ````{tab-set}
 ```{tab-item} HR-pQCT
 `img`: SITK image or path to image   

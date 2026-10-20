@@ -15,7 +15,7 @@ Here are the functions available in ORMIR-XCT:
 ### Segmentation
 
 - [Automatic contouring](functions/segmentation/auto_contour.md)
-- [Automatic contouring based on an existing periosteal mask](functions/segmentation/auto_contour.md)
+- [Automatic contouring based on a rough existing periosteal mask](functions/segmentation/auto_contour.md)
 - [Adaptive local thresholding](functions/segmentation/adaptive_local.md)
 
 

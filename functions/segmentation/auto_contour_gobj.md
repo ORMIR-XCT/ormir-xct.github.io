@@ -1,6 +1,6 @@
-# Automatic contouring based on an existing periosteal mask
+# Automatic contouring based on a rough existing periosteal mask
 
-This variation of [automatic contouring](./auto_contour_img.md) uses the gray value image as well as a rough periosteal masks of the bones as input and generates a refined periosteal mask.
+This variation of [automatic contouring](./auto_contour_img.md) uses the gray value image as well as a rough periosteal mask of the bones as input and generates a refined periosteal mask.
 
 ## Function
 To use automatic contouring based on an existing periosteal mask, use the following commands:
@@ -8,17 +8,18 @@ To use automatic contouring based on an existing periosteal mask, use the follow
 ```python
 from ormir_xct.core.segmentation.autocontour import autocontour_gobj
 
-autocontour_gobj(img, 
+autocontour_gobj(
+    img, 
     dst_gobj, 
     prx_gobj):
 ```
 
-## Input parameter settings
+## Input settings
 ````{tab-set}
 ```{tab-item} HR-pQCT
 `img`: SITK image or path to image   
-`dst_gobj`: SITK image or path to distal mask   
-`prx_gobj`: SITK image or path to proximal mask
+`dst_gobj`: SITK image or path to distal periosteal mask
+`prx_gobj`: SITK image or path to proximal periosteal mask
 
 Further information about the function and its inputs can be found here (link to the API coming soon!)
 ```
