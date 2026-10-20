@@ -1,12 +1,16 @@
 # Bone Mineral Density
 
-The Bone Mineral Density (BMD) function calculates the BMD of an image in mgHA/ccm. If no mask is provided, BMD will be calculated for the entire image from the intensity information provided by the image. If a mask is provided, BMD will be calculated only for voxels inside the mask region.
+This function calculates the Bone Mineral Density (BMD) of an image in mgHA/ccm. 
+If no mask is provided, BMD will be calculated for the entire image from its intensity. 
+If a mask is provided, BMD will be calculated only for voxels inside the masked region.
 
 ## Function 
 
-Use this command:
+To calculate BMD, use the following commands:
 
-```shell
+```python
+from ormir_xct.core.microarchitecture.bmd import bmd
+
 bmd(
     image=value1,
     mask=value2,
@@ -30,17 +34,16 @@ bmd(
 `rescale_slope`: Calibration slope used for unit conversion. Default = `1603.51904`  
 `rescale_intercept`: Calibration intercept used for unit conversion. Default = `-391.209015`
 
-For further information about the function and inputs, visit [here (tbd)]().
-
+Further information about the function and its inputs can be found here (link to the API coming soon!)
 ```
 
 ```{tab-item} PCD-CT
-**Coming Soon**
+Coming soon
 
 ```
 
 ```{tab-item} µCT
-**Coming Soon**
+Coming soon
 
 ````
 ## Examples and workflows 
@@ -49,17 +52,15 @@ For further information about the function and inputs, visit [here (tbd)]().
 ```{tab-item} HR-pQCT
 Examples of how to use the BMD function:
 - [Bone_Mineral_Density.ipynb](https://github.com/ORMIR-XCT/ormir-xct.github.io/blob/main/tutorials/Bone_Mineral_Density.ipynb)
-- [Bone Mineral Density Example](https://ormir-xct.github.io/tutorials/bone-mineral-density/)
-
 ```
 
 ```{tab-item} PCD-CT
-**Coming Soon**
+Coming soon
 
 ```
 
 ```{tab-item} µCT
-**Coming Soon**
+Coming soon
 
 ````
 
@@ -67,16 +68,16 @@ Examples of how to use the BMD function:
 
 ````{tab-set}
 ```{tab-item} HR-pQCT
-> We used the method implemented in [](https://doi.org/10.21105/joss.06084)
+> We used the method implemented in ORMIR-XCT (@https://doi.org/10.21105/joss.06084).
 
 ```
 
 ```{tab-item} PCD-CT
-**Coming Soon**
+Coming soon
 
 ```
 
 ```{tab-item} µCT
-**Coming Soon**
+Coming soon
 
 ````

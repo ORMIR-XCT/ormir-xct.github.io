@@ -5,3 +5,6 @@ z_read_me.txt
 /tutorials/.ipynb_checkpoints
 ._config.yml.bak
 ._toc.yml.bak
+/functions/bmd/.ipynb_checkpoints
+/functions/processing/.ipynb_checkpoints
+/functions/segmentation/.ipynb_checkpoints

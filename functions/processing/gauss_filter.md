@@ -1,11 +1,15 @@
-# Gaussian filtering
+# Gaussian filter
 
 A Gaussian filter is an image-smoothing filter that reduces noise and small intensity variations by replacing each pixel or voxel with a weighted average of its neighbors, where closer neighbors receive higher weights according to a Gaussian (bell-shaped) distribution.
 
 ## Function
-To use the Gaussian filter combined with a fixed threshold, use the following function:
-```shell
-seg_gauss(input_image,
+To use the Gaussian filter combined with a fixed threshold, use the following commands:
+
+```python
+from ormir_xct.core.segmentation.gauss_seg import gauss_seg
+
+gauss_seg(
+    input_image,
     lower_threshold,
     upper_threshold,
     value_in_range,
@@ -28,7 +32,7 @@ seg_gauss(input_image,
 `support`:  Half-width of the Gaussian kernel in voxels. Default = `1.0`  
 `use_image_spacing`: Whether sigma is interpreted in physical units. Default = `False`  
 
-Further information about the function and its inputs can be found [here].
+Further information about the function and its inputs can be found here (link to the API coming soon!)
 ```
 
 ```{tab-item} PCD-CT
@@ -44,7 +48,7 @@ Coming soon
 ````{tab-set}
 ```{tab-item} HR-pQCT 
 
-Examples of how to use the function for the Gaussian filtering can be found in: 
+Examples of how to use the Gaussian filter: 
 * [Trabecular segmentation example](https://github.com/ORMIR-XCT/ORMIR-XCT/blob/main/examples/Trabecular_Segmentation.ipynb)
 * [Laplace-Hamming filter example](https://github.com/ORMIR-XCT/ORMIR-XCT/blob/main/examples/Laplace_Hamming_Filter.ipynb)
 
@@ -65,8 +69,8 @@ Coming soon
 ````{tab-set}
 ```{tab-item} HR-pQCT 
 
-If you use this function, please cite it like this:
-> We used the method as implemented in ORMIR-XCT (@https://doi.org/10.21105/joss.06084).
+If you use this function, please cite it as follows:
+> We used the Gaussian filter as implemented in ORMIR-XCT (@https://doi.org/10.21105/joss.06084).
 ```
 
 ```{tab-item} PCD-CT
